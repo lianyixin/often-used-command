@@ -73,6 +73,9 @@ Linux下载csv文件Windows打开中文乱码解决方案：iconv -f UTF-8 -t GB
 
 tensorboard：在当前events output出来的目录下，执行tensorboard --logdir ./即可，在跳出的http路径将ip地址改为服务器的。
 
+linux unzip解压缩出现中文乱码问题：unzip -O CP936 xxx.zip 
+可以参考链接：https://blog.csdn.net/meana520/article/details/53200944?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-0.control&spm=1001.2101.3001.4242
+
 ### windows快捷键
 win+D: 最小化所有窗口
 
