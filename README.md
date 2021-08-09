@@ -14,6 +14,12 @@ useradd -d /usr/test -m test   ###创建带有主目录的test用户
 
 root切换到普通用户： login -f username；普通用户切回来：sudo su
 
+pip源设置，比如增加阿里源，vim ~/.pip/pip.conf，输入以下内容：
+```
+[global]
+trusted-host=mirrors.aliyun.com
+index-url=http://mirrors.aliyun.com/pypi/simple/
+```
 云服务器有公网和私网之分，查看公网ip可以使用：curl cip.cc；查看本地ip使用：ipconfig, ip addr；查看端口是否正常通信：telnet 192.168.31.100 8081. 连接失败表示端口未占用。
 
 查看docker ip：docker inspect 容器ID | grep IPAddress
