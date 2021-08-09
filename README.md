@@ -10,6 +10,8 @@ frequently used command during my work in Linux environment.
 通过root创建新用户和密码：https://blog.csdn.net/stormbjm/article/details/9086163
 adduser xxx; passwd xxx;
 
+useradd -d /usr/test -m test   ###创建带有主目录的test用户
+
 root切换到普通用户： login -f username；普通用户切回来：sudo su
 
 云服务器有公网和私网之分，查看公网ip可以使用：curl cip.cc；查看本地ip使用：ipconfig, ip addr；查看端口是否正常通信：telnet 192.168.31.100 8081. 连接失败表示端口未占用。
