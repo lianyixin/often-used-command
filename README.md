@@ -14,6 +14,8 @@ useradd -d /usr/test -m test   ###创建带有主目录的test用户
 
 root切换到普通用户： login -f username；普通用户切回来：sudo su
 
+nohup显示不出来print的结果：python 有个-u参数，使得python不启用缓冲。nohup python -u test.py > nohup.out 2>&1 &
+
 pip源设置，比如增加阿里源，vim ~/.pip/pip.conf，输入以下内容：
 ```
 [global]
