@@ -247,7 +247,9 @@ vscode在使用docker远程连接时，需要下载docker destop版本，并且�
 
 启动已经停止的容器：docker start image_id
 
-后台运行：docker run -itd --name xxx image_repos:tag /bin/bash，加上d说明后台运行；想进入容器使用指令docker -it container_id /bin/bash
+后台运行：docker run -itd --name xxx image_repos:tag /bin/bash，加上d说明后台运行；docker run -it --name xxx -p 9300-9350:9300-9350 --ipc=host -v /mnt:/mnt image_repos:tag /bin/bash
+
+想进入容器使用指令docker exec -it container_id /bin/bash
 
 停止容器：docker stop image_id; docker restart image_id可以重启；
 
