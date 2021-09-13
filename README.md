@@ -199,6 +199,8 @@ conda activate xxx; conda deactivate
 
 conda env remove -n xxx
 
+导入导出环境：https://blog.csdn.net/shunaoxi2313/article/details/92003710
+
 安装jupyter kernel：在虚拟环境里，首先安装：conda install ipykernel。其次：python -m ipykernel install --user --name （名字） --display-name"python （名字）"
 
 删除kernel：jupyter kernelspec remove 环境名称
